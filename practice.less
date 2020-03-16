@@ -1,0 +1,489 @@
+@font-face {
+    font-family: 'Beyblade Metal Fight Font';
+    src: url('Beyblade Metal Fight Font.ttf');
+}
+@font-face {
+    font-family: 'BowlbyOne';
+    src: url('BowlbyOneSC-Regular.ttf');
+}
+@font-face {
+    font-family: 'Beware';
+    src: url('Beware.ttf');
+}
+@font-face {
+    font-family: 'Doppio';
+    src: url('DoppioOne-Regular.ttf');
+}
+@font-face {
+  font-family: "deftone stylus";
+  src: url('deftone stylus.ttf')
+}
+//---------- Gallery Style Sheet ----------//
+.gallery {
+  border: 1px solid #ccc;
+  &:hover {
+    transition: all .5s;
+    transform:scale(1.15);
+    box-shadow: 2px 2px 2px #777;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.9999999%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.9999999%;
+    margin: 6px 0;
+  }
+  .topnav.responsive a {
+    color: black;
+    float: none;
+    display: block;
+    text-align: left;
+   }
+
+  .box {
+    background-color: white;
+  }
+
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+  .topnav.responsive a {
+    color: black;
+    background-color: green;
+    float: none;
+    display: block;
+    text-align: left;
+   }
+   .overlay {
+     display: none;
+   }
+
+}
+.project-explain {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  > div {
+    line-height: 90px;
+    width: 25%;
+    text-align: center;
+    margin: 6px;
+  }
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: block;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color:#add8e6;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: .5s
+}
+.box:hover .overlay {
+  top: 0;
+  height: 0;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+// -------^^^^ Gallery Style Sheet ^^^^ -------//
+  img {
+    height: 10px;
+    width: 10px;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  text-decoration: none;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #FC4A1A;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 24.37500px;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    display: block;
+    &:active {
+      text-decoration: none;
+    }
+  }
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 700px) {
+  /* For desktop: */
+   body {
+    background-color: #FAC925;
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+header{
+    /* Enable flex mode. */
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+
+    /* Spread out the elements inside the header. */
+    justify-content: space-between;
+
+    /* Align items vertically in the center. */
+    align-items: center;
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 30px;
+
+
+      }
+      h3 {
+        font-size: 20px;
+
+
+      }
+      .topnav {
+        list-style-type: none;
+        position: absolute;
+        position: sticky;
+        top: 0;
+        width: 100%;
+
+      }
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+        float: right;
+        display: block;
+        color: black;
+        img {
+          height: 15px;
+          width: 15px;
+        }
+        }
+
+    }
+
+}
+@color: red;
+* {
+  box-sizing: border-box;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: #f5f5dc;
+      color: black;
+    }
+    h1{
+      font-size: 45px;
+      color: white;
+
+    }
+    h2 {
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      font-size: 40px;
+      text-align: center;
+    }
+    h3 {
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      font-size: 35px;
+      text-align: center;
+
+      font-family: 'Beyblade Metal Fight Font';
+    }
+    h4 {
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      font-size: 25px;
+      text-align: center;
+    }
+    h5 {
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      font-size: 20px;
+      text-align: center;
+    }
+    h6 {
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      font-size: 15px;
+      text-align: center;
+    }
+    .container {
+      width: 60%;
+
+      margin-left:20%;
+      margin-right: 20%;
+      height: 60%;
+      margin-top: 20%;
+      margin-bottom: 20%;
+      div {
+      width: 150px;
+      max-height: 150px;
+      }
+      height: auto;
+      position: fixed;
+      flex-flow: wrap;
+    }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      img {
+        height: 15px;
+        width: 15px;
+      }
+      }
+      .topnav.responsive a {
+       float: none;
+       display: block;
+       text-align: left;
+       }
+  }
+h1 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 80px;
+  text-align: center;
+  font-family: "deftone stylus";
+}
+h2 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 60px;
+  text-align: center;
+}
+h3 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'BowlbyOne';
+}
+h4 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 30px;
+  text-align: center;
+}
+h5 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 25px;
+  text-align: center;
+}
+h6 {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 20px;
+  text-align: center;
+}
+html,body{
+  height: 100%;
+  margin: 0;
+}
+.topnav {
+  font-style: oblique;
+  font-family: 'Beware';
+  overflow: hidden;
+  position: relative;
+  a {
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    float: left;
+    &:hover {
+      background-image:linear-gradient(green,white);
+
+      }
+    }
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  img {
+    height: 10px;
+    width: 10px;
+  }
+}
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.video-container {
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0px;
+  position: relative;
+  border-radius: 25px;
+  padding: 5px;
+ }
+ video,
+ iframe {
+   width: 100% !important;
+   height: 100% !important;
+ }
+
+ main {
+   background: white;
+   height: 100vh;
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 1rem;
+ }
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("sky-clouds-4k.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+
+}
+footer {
+  position: fixed;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  a {
+    color: white;
+    &:hover {
+      color: blue;
+    }
+  }
+}
